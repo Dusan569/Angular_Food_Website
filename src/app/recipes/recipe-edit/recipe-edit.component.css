@@ -1,0 +1,33 @@
+input{
+    transition: 1s ease;
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+    animation: shadowFlow 1s infinite linear;
+}
+
+textarea.ng-invalid.ng-touched{
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+    animation: shadowFlow 1s infinite linear;
+}
+
+.btn{
+    transition: 1s;
+}
+.btn.disabled{
+    color: white;
+}
+
+@keyframes shadowFlow {
+    0% {
+      box-shadow: 0 0 5px rgb(0, 0, 0);
+    }
+    50% {
+      box-shadow: 0 0 15px rgb(212, 18, 18);
+    }
+    100% {
+      box-shadow: 0 0 5px rgb(255, 0, 0);
+    }
+  }
